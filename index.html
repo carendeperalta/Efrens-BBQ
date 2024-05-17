@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efen's BBQ</title>
+
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="EfrenBBQ.css">
+</head>
+
+<body>
+    <!-- header design -->
+    <header class="header">
+        <a href="#" class="logo"><span>Efren's </span>BBQ</a>
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#works">Menu</a>
+            <a href="#shop"><i class='bx bx-cart' id="cart-icon"></i></a>
+            <!-- cart -->
+            <div class="cart">
+                <h2 class="cart-title">Your Cart</h2>
+                <!-- content -->
+                <div class="cart-content">
+                    <div class="cart-box">
+                    </div>
+                </div>
+                <!-- total -->
+                <div class="total">
+                    <div class="total-title">Total </div>
+                    <div class="total-price">₱0.00</div>
+                </div>
+                <!-- buy button -->
+                <button type="button" class="btn-buy">Buy Now</button>
+                <!-- cart close -->
+                <i class='bx bx-x' id="close-cart"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- home section design -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <div class="text-content">
+                <h3>Mabuhay!</h3>
+                <h1><span>Efren's </span>BBQ</h1>
+                <h2>Yes na Yes sa Sarap! </h2><br>
+                <p> Kumusta, mga Kababayan! Maligayang pagdating sa Efren's BBQ, kung saan ang bawat kagat ay may kasamang init ng pagmamahal at tradisyon ng lutong Pinoy. Dito sa Efren's BBQ, tinitiyak namin na ang bawat ihaw ay puno ng sarap na tatatak sa inyong alaala. Mula sa matamis at malinamnam na pork barbecue, malutong na chicken inasal, hanggang sa masarap na liempo, lahat ng aming putahe ay laging bagong luto at garantisadong masarap. 
+                    Ang sikreto sa aming tagumpay ay ang espesyal na timpla ni Kuya Efren, na pinaghalong mga sari-saring pampalasa at mga sikreto ng lolo. Bukod sa masarap na pagkain, ang aming masayang ambiance at mabubuting tauhan ang magpaparamdam sa inyo na parang nasa sariling tahanan.
+                    Kaya tara na at tikman ang sarap na handog namin para sa inyo. Sa Efren's BBQ, laging bida ang sarap at saya!                   
+                    Feel free to tweak it according to your preferences or any specific details about Efren's BBQ!</p>
+            </div>
+        </div>
+        <div class="home-img">
+            <img src="Y front page.png" alt="BBQ">
+        </div>
+    </section>
+
+    <!-- works section design -->
+    <section class="works" id="works">
+        <br><br><br><br><br><br>
+        <h2 class="heading">Menu</h2>
+        <div class="works-container">
+            <div class="works-box">
+                <div class="pic"><img src="Y front page - Copy - Copy.png" alt="Y12" onclick="showModal('Y front page - Copy - Copy.png', 'COMBO MEALS: Y12 YES WITH SUPER FRIENDS: 1 BBQ, 1 HOTDOG, 1 TENGA, 1 ISAW BABOY, 1 ISAW MANOK, 1 ISAW BILOG & JAVA RICE')"></div>
+                <h2 class="food-title"> COMBO MEALS: <span>Y12 </span>YES WITH <span>SUPER FRIENDS</span></h2>
+                <span class="food-price">₱ 269.00</span>
+                <i class='bx bx-cart add-to-cart'></i>
+            </div>
+    
+            <div class="works-box">
+                <div class="pic"><img src="Y front page - Copy.png" alt="Y14" onclick="showModal('Y front page - Copy.png', 'COMBO MEALS: Y14 YES WITH BARKADA: 1 BBQ, 1 HOTDOG, 1 TENGA, 1 ISAW BABOY, 1 ISAW MANOK, 1 ISAW BILOG, 1 BULAKLAK & JAVA RICE')"></div>
+                <h2 class="food-title"> COMBO MEALS: <span>Y14 </span>YES WITH <span>BARKADA</span></h2>
+                <span class="food-price">₱ 299.00</span>
+                <i class='bx bx-cart add-to-cart'></i>
+            </div>
+    
+            <div class="works-box">
+                <div class="pic"><img src="y1.png" alt="Y1" onclick="showModal('y1.png', 'REGULAR: Y1 YES WITH JAVA RICE')"></div>
+                <h2 class="food-title"> REGULAR: <span>Y1 </span>YES WITH JAVA RICE</h2>
+                <span class="food-price">₱ 95.00</span>
+                <i class='bx bx-cart add-to-cart'></i>
+            </div>
+    
+            <div class="works-box">
+                <div class="pic"><img src="y2.png" alt="Y2" onclick="showModal('y2.png', 'REGULAR: Y2 YES NA YES WITH JAVA RICE')"></div>
+                <h2 class="food-title"> REGULAR: <span>Y2</span> YES NA YES WITH JAVA RICE</h2>
+                <span class="food-price">₱ 139.00</span>
+                <i class='bx bx-cart add-to-cart'></i>
+            </div>
+    
+            <div class="works-box">
+                <div class="pic"><img src="y3.png" alt="Y3" onclick="showModal('y3.png', 'REGULAR: Y3 YES + HOTDOG WITH JAVA RICE')"></div>
+                <h2 class="food-title"> REGULAR: <span>Y3</span> YES + HOTDOG WITH JAVA RICE</h2>
+                <span class="food-price">₱ 129.00</span>
+                <i class='bx bx-cart add-to-cart'></i>
+            </div>
+    
+            <div class="works-box">
+                <div class="pic"><img src="y4.png" alt="Y4" onclick="showModal('y4.png', 'REGULAR: Y4 YES + TENGA WITH JAVA RICE')"></div>
+                <h2 class="food-title"> REGULAR: <span>Y4</span> YES + TENGA WITH JAVA RICE</h2>
+                <span class="food-price">₱ 129.00</span>
+                <i class='bx bx-cart add-to-cart'></i>
+            </div>
+    
+            <div class="works-box">
+                <div class="pic"><img src="y5.png" alt="Y5" onclick="showModal('y5.png', 'REGULAR: Y5 YES + ISAW BABOY WITH JAVA RICE')"></div>
+                <h2 class="food-title"> REGULAR: <span>Y5</span> YES + ISAW BABOY WITH JAVA RICE</h2>
+                <span class="food-price">₱ 129.00</span>
+                <i class='bx bx-cart add-to-cart'></i>
+            </div>
+    
+            <div class="works-box">
+                <div class="pic"><img src="y6.png" alt="Y6" onclick="showModal('y6.png', 'REGULAR: Y6 YES + ISAW MANOK WITH JAVA RICE')"></div>
+                <h2 class="food-title"> REGULAR: <span>Y6</span> YES + ISAW MANOK WITH JAVA RICE</h2>
+                <span class="food-price">₱ 129.00</span>
+                <i class='bx bx-cart add-to-cart'></i>
+            </div>
+    
+            <div class="works-box">
+                <div class="pic"><img src="y7.png" alt="Y7" onclick="showModal('y7.png', 'REGULAR: Y7 YES WITH FRIENDS')"></div>
+                <h2 class="food-title"> REGULAR: <span>Y7</span> YES WITH FRIENDS</h2>
+                <span class="food-price">₱ 235.00</span>
+                <i class='bx bx-cart add-to-cart'></i>
+            </div>
+    
+            <div class="works-box">
+                <div class="pic"><img src="y8.png" alt="Y8" onclick="showModal('y8.png', 'REGULAR: Y8 INIHAW NA LIEMPO WITH JAVA RICE')"></div>
+                <h2 class="food-title"> REGULAR: <span>Y8</span> INIHAW NA LIEMPO WITH JAVA RICE</h2>
+                <span class="food-price">₱ 229.00</span>
+                <i class='bx bx-cart add-to-cart'></i>
+            </div>
+    
+            <div class="works-box">
+                <div class="pic"><img src="y9.png" alt="Y9" onclick="showModal('y9.png', 'REGULAR: Y9 CHICKEN BBQ [LEG QUARTER] WITH JAVA RICE')"></div>
+                <h2 class="food-title"> REGULAR: <span>Y9</span> CHICKEN BBQ [LEG QUARTER] WITH JAVA RICE</h2>
+                <span class="food-price">₱ 175.00</span>
+                <i class='bx bx-cart add-to-cart'></i>
+            </div>
+    
+            <div class="works-box">
+                <div class="pic"><img src="y10.png" alt="Y10" onclick="showModal('y10.png', 'REGULAR: Y10 YES + ISAW BILOG WITH JAVA RICE')"></div>
+                <h2 class="food-title"> REGULAR: <span>Y10</span> YES + ISAW BILOG WITH JAVA RICE</h2>
+                <span class="food-price">₱ 125.00</span>
+                <i class='bx bx-cart add-to-cart'></i>
+            </div>
+    
+            <div class="works-box">
+                <div class="pic"><img src="y11.png" alt="Y11" onclick="showModal('y11.png', 'REGULAR: Y11 YES + ISAW BILOG WITH JAVA RICE')"></div>
+                <h2 class="food-title"> REGULAR: <span>Y11</span> YES + ISAW BILOG WITH JAVA RICE</h2>
+                <span class="food-price">₱ 135.00</span>
+                <i class='bx bx-cart add-to-cart'></i>
+            </div>
+    
+            <div class="works-box">
+                <div class="pic"><img src="y12.png" alt="Y13" onclick="showModal('y12.png', 'REGULAR: Y13 YES + BULAKLAK WITH JAVA RICE')"></div>
+                <h2 class="food-title"> REGULAR: <span>Y13</span> YES + BULAKLAK WITH JAVA RICE</h2>
+                <span class="food-price">₱ 129.00</span>
+                <i class='bx bx-cart add-to-cart'></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal structure -->
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img id="modalImage" src="" alt="">
+        <p id="modalDescription"></p>
+    </div>
+</div>
+    
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- custom js -->
+    <script src="EfrenBBQ.js"></script>
+
+</body>
+
+</html>
